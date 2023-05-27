@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap&_v=20230527162426"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230527162426" />
+    <link rel="stylesheet" href="css/style.min.css?_v=20230527162426">
+    <title>alex</title>
+</head>
+
+<body>
+    <div class="wrapper__top">
+        <header class="header">
+            <div class="container">
+                <div class="header__top">
+                    <a href="#" class="logo">
+                        <img class="logo__img" src="img/logo.svg" alt="logo">
+                    </a>
+                    <nav class="menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">о продукте</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">результаты</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">этапы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Отзывы</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__content">
+                    <div class="header__content-inner">
+                        <div class="header__content-left">
+                            <picture><source srcset="img/header-arrow-left.webp" type="image/webp"><img class="header__content-arrow--left" src="img/header-arrow-left.png" alt="arrow"></picture>
+                            <picture><source srcset="img/header-arrow-right.webp" type="image/webp"><img class="header__content-arrow--right" src="img/header-arrow-right.png" alt="arrow"></picture>
+                            <h1 class="header__content-title">
+                                Создай тело мечты без диет
+                                и упражнений за месяц
+                            </h1>
+                            <p class="header__content-text">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula integer turpis id lectus
+                                tristique. Vel varius congue consectetur adipiscing elitsuspendisse molestie risus.
+                                consectetur
+                            </p>
+                            <button class="header__btn popup__btn">Заказать со скидкой 50%</button>
+                            <div class="timer" dir="ltr">
+
+                                <p class="timer__title" id="upform">
+                                    <img src="img/timer.svg" alt="timer" />
+                                    <span>Акция действительна:</span>
+                                </p>
+                                <div data-timer="detailed" class="timer__inner">
+                                    <div class="white">
+                                        <div data-hours-dozens class="timer__item">0</div>
+                                    </div>
+                                    <div class="white mr7">
+                                        <div data-hours-units class="timer__item">0</div>
+                                    </div>
+                                    <div class="dots">
+                                        :
+                                    </div>
+                                    <div class="white ml7">
+                                        <div data-minutes-dozens class="timer__item">0</div>
+                                    </div>
+                                    <div class="white mr7">
+                                        <div data-minutes-units class="timer__item">0</div>
+                                    </div>
+                                    <div class="dots">
+                                        :
+                                    </div>
+                                    <div class="white ml7">
+                                        <div data-seconds-dozens class="timer__item">0</div>
+                                    </div>
+                                    <div class="white">
+                                        <div data-seconds-units class="timer__item">0</div>
+                                    </div>
+                                </div>
+                                <div class="timer__names">
+                                    <p class="timer__names-name hours">часы</p>
+                                    <p class="timer__names-name min">минуты</p>
+                                    <p class="timer__names-name sec">секунды</p>
+                                </div>
+                            </div>
+                            <div class="header__left-price">
+                                <p class="header__price-new">
+                                    2290 E£
+                                </p>
+                                <p class="header__price-old">
+                                    4580
+                                </p>
+                            </div>
+                        </div>
+                        <div class="header__content-right">
+                            <picture><source srcset="img/header-right.webp" type="image/webp"><img class="header__content-right--img" src="img/header-right.png" alt="right"></picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture><source srcset="img/header-bottom.webp" type="image/webp"><img class="header__bottom-img" src="img/header-bottom.png" alt="bottom"></picture>
+            <picture><source srcset="img/header-bgleft-responsiv.webp" type="image/webp"><img class="header__right-responsive" src="img/header-bgleft-responsiv.png" alt="botll"></picture>
+        </header>
+    </div>
+
+
+    <div class="popup">
+        <div class="container">
+            <div class="popup__close-inner">
+                <picture><source srcset="img/Close.webp" type="image/webp"><img class="popup__close" src="img/Close.png" alt="close"></picture>
+            </div>
+            <div class="popup__wrapper">
+
+                <div class="timer popup__timer" dir="ltr">
+                    <p class="timer__title popup__timer-title" id="upform">
+                        <img src="img/timer.svg" alt="timer" />
+                        <span>Акция действительна:</span>
+                    </p>
+                    <div data-timer="detailed" class="timer__inner ">
+                        <div class="white">
+                            <div data-hours-dozens class="timer__item popup__form-details">0</div>
+                        </div>
+                        <div class="white mr7">
+                            <div data-hours-units class="timer__item popup__form-details">0</div>
+                        </div>
+                        <div class="dots popup__form-details">
+                            :
+                        </div>
+                        <div class="white ml7">
+                            <div data-minutes-dozens class="timer__item popup__form-details">0</div>
+                        </div>
+                        <div class="white mr7">
+                            <div data-minutes-units class="timer__item popup__form-details">0</div>
+                        </div>
+                        <div class="dots popup__form-details">
+                            :
+                        </div>
+                        <div class="white ml7">
+                            <div data-seconds-dozens class="timer__item popup__form-details">0</div>
+                        </div>
+                        <div class="white">
+                            <div data-seconds-units class="timer__item popup__form-details">0</div>
+                        </div>
+                    </div>
+                    <div class="timer__names">
+                        <p class="timer__names-name hours">часы</p>
+                        <p class="timer__names-name min">минуты</p>
+                        <p class="timer__names-name sec">секунды</p>
+                    </div>
+                </div>
+                <form class="popup__form">
+                    <picture><source srcset="img/form-img.webp" type="image/webp"><img class="popup__form-img" src="img/form-img.png" alt="form"></picture>
+                    <picture><source srcset="img/popup-rigt-img.webp" type="image/webp"><img class="popup__right-mobile" src="img/popup-rigt-img.png" alt="mobile"></picture>
+                    <h4 class="popup__form-title">
+                        Закажите <span class="popup__form-color">BodyBoom</span>
+                        прямо сейчас
+                    </h4>
+                    <div class="popup__form-price">
+                        <p class="popup__form-price--new">
+                            2290 E£
+                        </p>
+                        <p class="popup__form-price--old">
+                            4580
+                        </p>
+                    </div>
+                    <p class="popup__form-text">
+                        *Ваше имя
+                    </p>
+                    <input class="popup__form-name" type="text" placeholder="">
+                    <p class="popup__form-text">
+                        *Номер телефона
+                    </p>
+                    <input class="popup__form-phone" type="tel" placeholder="">
+                    <button class="popup__form-btn">Заказать со скидкой 50%</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper__top">
+        <section class="effects">
+            <div class="container">
+                <h2 class="effects__title">
+                    Наличие лишнего веса серьезно <span class="effects__color">повышает нагрузку на организм</span>
+                    и приводит к серьезным последствиям
+                </h2>
+                <h2 class="effects__title-mobile">
+                    Лишний вес <span class="effects__color">нагружает организм</span>нагружает организм и ухудшает
+                    здоровье
+                </h2>
+                <p class="effects__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus magna
+                    morbi
+                    quam adipiscing ut. A ac eros, nisi, amet elit nam.
+                </p>
+                <p class="effects__text-mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus
+                </p>
+                <div class="effects__inner">
+                    <div class="effects__inner-item">
+                        <div class="effects__item-box">
+                            <picture><source srcset="img/effects-1.webp" type="image/webp"><img class="effects__box-img" src="img/effects-1.png" alt="effects-1"></picture>
+                            <picture><source srcset="img/effects-item1.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item1.png" alt="bottom-img"></picture>
+                        </div>
+                        <p class="effects__item-title">
+                            Проблемы
+                            с сердцем
+                        </p>
+                        <p class="effects__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="effects__inner-item2">
+                        <div class="effects__item-box">
+                            <picture><source srcset="img/effects-2.webp" type="image/webp"><img class="effects__box-img2" src="img/effects-2.png" alt="effects-2"></picture>
+                            <picture><source srcset="img/effects-item2.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item2.png" alt="bottom-img"></picture>
+                        </div>
+                        <p class="effects__item-title">
+                            Повышенный
+                            риск диабета
+                        </p>
+                        <p class="effects__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="effects__inner-item">
+                        <div class="effects__item-box">
+                            <picture><source srcset="img/effects-3.webp" type="image/webp"><img class="effects__box-img" src="img/effects-3.png" alt="effects-3"></picture>
+                            <picture><source srcset="img/effects-item3.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item3.png" alt="bottom-img"></picture>
+                        </div>
+                        <p class="effects__item-title">
+                            Хароническая усталость
+                        </p>
+                        <p class="effects__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <div class="effects__inner-item4">
+                        <div class="effects__item-box">
+                            <picture><source srcset="img/effects-4.webp" type="image/webp"><img class="effects__box-img4" src="img/effects-4.png" alt="effects-4"></picture>
+                            <picture><source srcset="img/effects-item4.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item4.png" alt="bottom-img"></picture>
+                        </div>
+                        <p class="effects__item-title">
+                            частные
+                            депрессии
+                        </p>
+                        <p class="effects__item-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="swiper effects__swiper-mobile">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="effects__inner-item">
+                                <div class="effects__item-box">
+                                    <picture><source srcset="img/effects-1.webp" type="image/webp"><img class="effects__box-img" src="img/effects-1.png" alt="effects-1"></picture>
+                                    <picture><source srcset="img/effects-item1.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item1.png" alt="bottom-img"></picture>
+                                </div>
+                                <p class="effects__item-title">
+                                    Проблемы
+                                    с сердцем
+                                </p>
+                                <p class="effects__item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="effects__inner-item2">
+                                <div class="effects__item-box">
+                                    <picture><source srcset="img/effects-2.webp" type="image/webp"><img class="effects__box-img2" src="img/effects-2.png" alt="effects-2"></picture>
+                                    <picture><source srcset="img/effects-item2.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item2.png" alt="bottom-img"></picture>
+                                </div>
+                                <p class="effects__item-title">
+                                    Повышенный
+                                    риск диабета
+                                </p>
+                                <p class="effects__item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="effects__inner-item">
+                                <div class="effects__item-box">
+                                    <picture><source srcset="img/effects-3.webp" type="image/webp"><img class="effects__box-img" src="img/effects-3.png" alt="effects-3"></picture>
+                                    <picture><source srcset="img/effects-item3.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item3.png" alt="bottom-img"></picture>
+                                </div>
+                                <p class="effects__item-title">
+                                    Хароническая усталость
+                                </p>
+                                <p class="effects__item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="effects__inner-item4">
+                                <div class="effects__item-box">
+                                    <picture><source srcset="img/effects-4.webp" type="image/webp"><img class="effects__box-img4" src="img/effects-4.png" alt="effects-4"></picture>
+                                    <picture><source srcset="img/effects-item4.webp" type="image/webp"><img class="effects__box-img--bottom" src="img/effects-item4.png" alt="bottom-img"></picture>
+                                </div>
+                                <p class="effects__item-title">
+                                    частные
+                                    депрессии
+                                </p>
+                                <p class="effects__item-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                </p>
+                            </div>
+                        </div>
+                        ...
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+            <picture><source srcset="img/effects-mobile-bottom.webp" type="image/webp"><img class="effects__mobile-bottom" src="img/effects-mobile-bottom.png" alt="mobile"></picture>
+        </section>
+        <section class="formula">
+            <div class="container">
+                <div class="formula__wrapper">
+                    <h4 class="formula__title">
+                        Уникальная формула позволяет худеть
+                        без диет и тренировок - всего за 30 дней
+                    </h4>
+                    <h4 class="formula__title-mobile">
+                        Уникальная формула
+                        похудения <span class="formula__bold">без диет и тренировок - за месяц</span>
+                    </h4>
+                    <p class="formula__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus
+                        magna
+                        morbi quam adipiscing ut. A ac eros, nisi, amet elit nam.
+                    </p>
+                    <p class="formula__text-mobile">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus
+                    </p>
+                    <div class="formula__inner">
+                        <picture><source srcset="img/formula-citrus.webp" type="image/webp"><img class="formula__left-citrus" src="img/formula-citrus.png" alt="citrus"></picture>
+                        <div class="formula__inner-left">
+                            <div class="formula__left-item">
+                                <div class="formula__left-box">
+                                    <picture><source srcset="img/formula-left1.webp" type="image/webp"><img class="formula__box-img" src="img/formula-left1.png" alt="img-left"></picture>
+                                </div>
+                                <p class="formula__left-text">
+                                    Он поглощает жиры и превращает их в энергию
+                                </p>
+                            </div>
+                            <div class="formula__left-item">
+                                <div class="formula__left-box">
+                                    <picture><source srcset="img/formula-left2.webp" type="image/webp"><img class="formula__box-img2" src="img/formula-left2.png" alt="img-left"></picture>
+                                </div>
+                                <p class="formula__left-text">
+                                    Подавляет аппетит
+                                    и дает энергию
+                                </p>
+                            </div>
+                            <div class="formula__left-item">
+                                <div class="formula__left-box">
+                                    <picture><source srcset="img/formula-left3.webp" type="image/webp"><img class="formula__box-img3" src="img/formula-left3.png" alt="img-left"></picture>
+                                </div>
+                                <p class="formula__left-text">
+                                    Выводит токсины из организма и успокаивает отеки
+                                </p>
+                            </div>
+                            <div class="formula__left-item">
+                                <div class="formula__left-box">
+                                    <picture><source srcset="img/formula-left4.webp" type="image/webp"><img class="formula__box-img4" src="img/formula-left4.png" alt="img-left"></picture>
+                                </div>
+                                <p class="formula__left-text">
+                                    Вырабатывает дофамин (гормон счастья)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="formula__inner-right">
+                            <picture><source srcset="img/formula-right.webp" type="image/webp"><img class="formula__right-img" src="img/formula-right.png" alt="formula-right"></picture>
+                        </div>
+                    </div>
+                    <button class="header__btn popup__btn formula__btn">Заказать со скидкой 50%</button>
+                </div>
+            </div>
+        </section>
+        <section class="changes">
+            <picture><source srcset="img/changes-apple-left.webp" type="image/webp"><img class="changes__bg-left" src="img/changes-apple-left.png" alt="apple"></picture>
+            <picture><source srcset="img/changes-apple-right.webp" type="image/webp"><img class="changes__bg-right" src="img/changes-apple-right.png" alt="apple"></picture>
+            <div class="container">
+                <h4 class="changes__title">
+                    Посмотрите <span class="changes__color">как изменится ваше тело</span>
+                </h4>
+                <p class="changes__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus magna
+                    morbi
+                    quam adipiscing ut. A ac eros, nisi, amet elit nam.
+                </p>
+                <p class="changes__text-mobile">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. <span class="changes__bold">Non, cursus
+                        elementum ligula tellus.</span>
+                </p>
+                <div class="changes__figurs">
+                    <picture><source srcset="img/figur-1.webp" type="image/webp"><img src="img/figur-1.png" alt="figurs" class="changes__figurs-img"></picture>
+                    <picture><source srcset="img/figur-2.webp" type="image/webp"><img src="img/figur-2.png" alt="figurs" class="changes__figurs-img2"></picture>
+                    <picture><source srcset="img/figur-3.webp" type="image/webp"><img src="img/figur-3.png" alt="figurs" class="changes__figurs-img3"></picture>
+                    <picture><source srcset="img/figur-4.webp" type="image/webp"><img src="img/figur-4.png" alt="figurs" class="changes__figurs-img4"></picture>
+                </div>
+                <div class="changes__line">
+                    <picture><source srcset="img/canges-line1.webp" type="image/webp"><img class="changes__line-img" src="img/canges-line1.png" alt="ciarcle"></picture>
+                    <picture><source srcset="img/canges-line1.webp" type="image/webp"><img class="changes__line-img" src="img/canges-line1.png" alt="ciarcle"></picture>
+                    <picture><source srcset="img/canges-line1.webp" type="image/webp"><img class="changes__line-img" src="img/canges-line1.png" alt="ciarcle"></picture>
+                    <picture><source srcset="img/changes-line-arrow.webp" type="image/webp"><img class="changes__line-img4" src="img/changes-line-arrow.png" alt="arrow"></picture>
+                </div>
+                <div class="changes__inner">
+                    <div class="changes__inner-item">
+                        <p class="changes__item-title">
+                            День 1
+                        </p>
+                        <p class="changes__item-text1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non,
+                        </p>
+                        <p class="changes__item-text2">
+                            cursus elementum ligula tellus magna morbi quam adipiscing ut. A ac eros, nisi, amet elit
+                            nam.
+                        </p>
+                    </div>
+                    <div class="changes__inner-item">
+                        <p class="changes__item-title">
+                            День 15
+                        </p>
+                        <p class="changes__item-text1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non,
+                        </p>
+                        <p class="changes__item-text2">
+                            cursus elementum ligula tellus magna morbi quam adipiscing ut. A ac eros, nisi, amet elit
+                            nam.
+                        </p>
+                    </div>
+                    <div class="changes__inner-item">
+                        <p class="changes__item-title">
+                            День 30
+                        </p>
+                        <p class="changes__item-text1">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non,
+                        </p>
+                        <p class="changes__item-text2">
+                            cursus elementum ligula tellus magna morbi quam adipiscing ut. A ac eros, nisi, amet elit
+                            nam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="result">
+        <div class="container">
+            <h4 class="result__title">
+                Эти люди уже <span class="result__color">сбросили лишние</span> <span
+                    class="result__color">килограммы</span> с помощью BodyBoom
+            </h4>
+            <p class="result__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span class="result__bold">Non, cursus elementum ligula tellus</span>
+                magna morbi
+                quam adipiscing
+            </p>
+            <p class="result__text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <span class="result__bold">Non, cursus elementum ligula tellus</span>
+            </p>
+            <div class="swiper swiper-result">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper__result-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="slider__box">
+                            <div class="slider__box-left">
+                                <p class="slider__left-name">
+                                    Хабиб
+                                </p>
+                                <p class="slider__left-age">
+                                    31 год
+                                </p>
+                                <picture><source srcset="img/slider-left1.webp" type="image/webp"><img src="img/slider-left1.png" alt="slider-left1" class="slider__left-img"></picture>
+                                <p class="slider__left-result">
+                                    до
+                                </p>
+                            </div>
+                            <div class="slider__box-right">
+                                <p class="slider__right-name">
+                                    Результат:
+                                </p>
+                                <p class="slider__right-age">
+                                    12 кг
+                                </p>
+                                <picture><source srcset="img/slider-right1.webp" type="image/webp"><img src="img/slider-right1.png" alt="slider-right1" class="slider__right-img"></picture>
+                                <p class="slider__right-result">
+                                    после
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__box">
+                            <div class="slider__box-left">
+                                <p class="slider__left-name">
+                                    Хабибa
+                                </p>
+                                <p class="slider__left-age">
+                                    44 годa
+                                </p>
+                                <picture><source srcset="img/slider-left2.webp" type="image/webp"><img src="img/slider-left2.png" alt="slider-left1" class="slider__left-img"></picture>
+                                <p class="slider__left-result">
+                                    до
+                                </p>
+                            </div>
+                            <div class="slider__box-right">
+                                <p class="slider__right-name">
+                                    Результат:
+                                </p>
+                                <p class="slider__right-age">
+                                    15 кг
+                                </p>
+                                <picture><source srcset="img/slider-right2.webp" type="image/webp"><img src="img/slider-right2.png" alt="slider-right1" class="slider__right-img"></picture>
+                                <p class="slider__right-result">
+                                    после
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__box">
+                            <div class="slider__box-left">
+                                <p class="slider__left-name">
+                                    Хабиб
+                                </p>
+                                <p class="slider__left-age">
+                                    31 год
+                                </p>
+                                <picture><source srcset="img/slider-left1.webp" type="image/webp"><img src="img/slider-left1.png" alt="slider-left1" class="slider__left-img"></picture>
+                                <p class="slider__left-result">
+                                    до
+                                </p>
+                            </div>
+                            <div class="slider__box-right">
+                                <p class="slider__right-name">
+                                    Результат:
+                                </p>
+                                <p class="slider__right-age">
+                                    12 кг
+                                </p>
+                                <picture><source srcset="img/slider-right1.webp" type="image/webp"><img src="img/slider-right1.png" alt="slider-right1" class="slider__right-img"></picture>
+                                <p class="slider__right-result">
+                                    после
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slider__box">
+                            <div class="slider__box-left">
+                                <p class="slider__left-name">
+                                    Хабиб
+                                </p>
+                                <p class="slider__left-age">
+                                    31 год
+                                </p>
+                                <picture><source srcset="img/slider-left1.webp" type="image/webp"><img src="img/slider-left1.png" alt="slider-left1" class="slider__left-img"></picture>
+                                <p class="slider__left-result">
+                                    до
+                                </p>
+                            </div>
+                            <div class="slider__box-right">
+                                <p class="slider__right-name">
+                                    Результат:
+                                </p>
+                                <p class="slider__right-age">
+                                    12 кг
+                                </p>
+                                <picture><source srcset="img/slider-right1.webp" type="image/webp"><img src="img/slider-right1.png" alt="slider-right1" class="slider__right-img"></picture>
+                                <p class="slider__right-result">
+                                    после
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <div class="swiper-scrollbar"></div>
+            </div>
+    </section>
+    <section class="order">
+        <div class="container">
+            <h4 class="order__title">
+                Все еще Сомневаетесь?
+                <span class="order__color">Закажите BodyBoom
+                    прямо сейчас и получите скидку 50%
+                </span>
+            </h4>
+            <h4 class="order__title-mobile">
+                Все еще Сомневаетесь?
+                <span class="order__color">Закажите BodyBoom
+                    прямо сейчас и получите скидку 50%
+                </span>
+            </h4>
+            <p class="order__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus magna morbi
+                quam adipiscing ut. A ac eros, nisi, amet elit nam.
+            </p>
+            <p class="order__text-mobile">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus.
+            </p>
+            <form class="order__form">
+                <input class="order__form-input" type="text" placeholder="Ваше имя">
+                <input class="order__form-input" type="tel" placeholder="Номер телефона">
+                <button class="header__btn popup__btn order__btn">Заказать со скидкой 50%</button>
+            </form>
+            
+        </div>
+    </section>
+    <div class="wrapper">
+        <section class="benefits">
+            <picture><source srcset="img/benefits-bg-before.webp" type="image/webp"><img src="img/benefits-bg-before.png" alt="bg" class="benefits__bg-left"></picture>
+            <div class="container">
+                <h4 class="benefits__title">
+                    Что специалисты <span class="benefits__color">говорят о BodyBoom</span>
+                </h4>
+                <div class="benefits__inner">
+                    <div class="benefits__inner-content">
+                        <p class="benefits__content-text1">
+                            “Перед разработкой BodyBom были проанализированы <span class="benefits__bold">свойства
+                                детоксикации и сжигания жира</span> более чем
+                            2000 продуктов. По результатам была создана уникальная формула детокса, работающая в
+                            соответствии с биоритмами человека.
+                        </p>
+                        <p class="benefits__content-text2">
+                            Микроэлементы активизируют процессы очищения <span class="benefits__bold2">в организме и
+                                регулируют чувство голода</span> , а
+                            органические растения отложения в организме.”
+                        </p>
+                        <div class="benefits__text3-wrapper">
+                            <p class="benefits__content-text3">
+                                Ахмет ибн Абдул
+                                кандидат медицинских наук,
+                                врач-диетолог
+                            </p>
+                            <picture><source srcset="img/benefits-bottom.webp" type="image/webp"><img class="benefits__content-img" src="img/benefits-bottom.png" alt="benefits-bottom"></picture>
+                        </div>
+                        <picture><source srcset="img/benefits-center.webp" type="image/webp"><img class="benefits__center-img--mobile" src="img/benefits-center.png" alt="benefits-center"></picture>
+                    </div>
+                    <div class="benefits__inner-content--mobile">
+                        <picture><source srcset="img/benefits-mobile-doc.webp" type="image/webp"><img class="benefits__mobile-img" src="img/benefits-mobile-doc.png" alt="doc"></picture>
+                        <p class="benefits__content-text1--mobile">
+                            “Перед разработкой BodyBom были проанализированы <span class="benefits__bold">свойства
+                                детоксикации и сжигания жира</span> более чем
+                            2000 продуктов. По результатам была создана уникальная формула детокса, работающая в
+                            соответствии с биоритмами человека.
+                        </p>
+                        <p class="benefits__content-text3--mobile">
+                                Ахмет ибн Абдул
+                                кандидат медицинских наук,
+                                врач-диетолог
+                            </p>
+                            <picture><source srcset="img/benefits-bottom.webp" type="image/webp"><img class="benefits__content-img--mobile" src="img/benefits-bottom.png" alt="benefits-bottom"></picture>
+                            <picture><source srcset="img/benefits-certificate.webp" type="image/webp"><img class="benefits__right-img--mobile" src="img/benefits-certificate.png" alt="certificate"></picture>
+                    </div>
+                    <picture><source srcset="img/benefits-center.webp" type="image/webp"><img class="benefits__center-img" src="img/benefits-center.png" alt="benefits-center"></picture>
+                    <div class="benefits__inner-right">
+                        <picture><source srcset="img/benefits-certificate.webp" type="image/webp"><img class="benefits__right-img" src="img/benefits-certificate.png" alt="certificate"></picture>
+                        <button class="header__btn popup__btn benefits__btn">заказать прямо сейчас</button>
+                    </div>
+                </div>
+            </div>
+            <picture><source srcset="img/benefits-bg-after.webp" type="image/webp"><img class="benefits__bg-right" src="img/benefits-bg-after.png" alt="bg"></picture>
+        </section>
+        <section class="reviews">
+            <div class="container">
+                <h4 class="reviews__title">
+                    Почитайте, что говорят люди,<br>
+                    которые
+                    <span class="reviews__bold">уже похудели с помощью BodyBoom</span>
+                </h4>
+                <div class="swiper reviews-slider">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <picture><source srcset="img/reviews-slide1.webp" type="image/webp"><img class="reviews__slider-img" src="img/reviews-slide1.png" alt="reviews-slide"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture><source srcset="img/reviews-slide1.webp" type="image/webp"><img class="reviews__slider-img" src="img/reviews-slide1.png" alt="reviews-slide"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture><source srcset="img/reviews-slide1.webp" type="image/webp"><img class="reviews__slider-img" src="img/reviews-slide1.png" alt="reviews-slide"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture><source srcset="img/reviews-slide1.webp" type="image/webp"><img class="reviews__slider-img" src="img/reviews-slide1.png" alt="reviews-slide"></picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture><source srcset="img/reviews-slide1.webp" type="image/webp"><img class="reviews__slider-img" src="img/reviews-slide1.png" alt="reviews-slide"></picture>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                </div>
+                <button class="header__btn popup__btn reviews__btn">получить скидку 50%</button>
+            </div>
+            <picture><source srcset="img/reviews-bottom-bg-mobile.webp" type="image/webp"><img class="reviews__bg-bottom" src="img/reviews-bottom-bg-mobile.png" alt="citrus" ></picture>
+        </section>
+        <section class="dreams">
+            <picture><source srcset="img/dreams-bg-left.webp" type="image/webp"><img class="dreams__bg-left" src="img/dreams-bg-left.png" alt="bg"></picture>
+            <picture><source srcset="img/dreams-bg-right.webp" type="image/webp"><img class="dreams__bg-right" src="img/dreams-bg-right.png" alt="bg"></picture>
+            <div class="container">
+                <h4 class="dreams__title">
+                    Всего 4 простых шага, чтобы получить BodyBoom
+                    <span class="dreams__color">и создать тело своей мечты</span>
+                </h4>
+                <p class="dreams__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non, cursus elementum ligula tellus magna
+                    morbi
+                    quam adipiscing ut. A ac eros, nisi, amet elit nam.
+                </p>
+                <div class="dreams__inner">
+                    <div class="dreams__inner-left">
+                        <div class="dreams__inner-item">
+                            <div class="dreams__item-box">
+                                <picture><source srcset="img/dreams-1.webp" type="image/webp"><img class="dreams__box-img" src="img/dreams-1.png" alt="dreams1"></picture>
+                                <p class="dreams__box-text">
+                                    Заполните форму
+                                    на сайте
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dreams__inner-item">
+                            <div class="dreams__item-box">
+                                <picture><source srcset="img/dreams-3.webp" type="image/webp"><img class="dreams__box-img" src="img/dreams-3.png" alt="dreams1"></picture>
+                                <p class="dreams__box-text">
+                                    с вами свяжется
+                                    менеджер
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <picture><source srcset="img/dreams-center.webp" type="image/webp"><img class="dreams__inner-center" src="img/dreams-center.png" alt="center"></picture>
+                    <div class="dreams__inner-right">
+                        <div class="dreams__inner-item">
+                            <div class="dreams__item-box">
+                                <picture><source srcset="img/dreams-2.webp" type="image/webp"><img class="dreams__box-img3" src="img/dreams-2.png" alt="dreams1"></picture>
+                                <p class="dreams__box-text">
+                                    Оформите
+                                    доставку
+                                </p>
+                            </div>
+                        </div>
+                        <div class="dreams__inner-item">
+                            <div class="dreams__item-box">
+                                <picture><source srcset="img/dreams-4.webp" type="image/webp"><img class="dreams__box-img4" src="img/dreams-4.png" alt="dreams1"></picture>
+                                <p class="dreams__box-text">
+                                    Получите<br>
+                                    заказ
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <picture><source srcset="img/dream-mobile-metr.webp" type="image/webp"><img class="dreams__img-mobile1" src="img/dream-mobile-metr.png" alt="metr"></picture>
+            <picture><source srcset="img/dream-mobile-berry.webp" type="image/webp"><img class="dreams__img-mobile2" src="img/dream-mobile-berry.png" alt="berry"></picture>
+        </section>
+    </div>
+    <section class="permonth">
+        <div class="container">
+            <div class="permonth__inner">
+                <div class="permonth__inner-left">
+                    <h4 class="permonth__left-title">
+                        Создай тело мечты
+                        <span class="permonth__bold">
+                            без диет
+                            и упражнений
+                        </span>
+                        за месяц
+                    </h4>
+                    <p class="permonth__left-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ligula integer turpis id lectus
+                        tristique. Vel varius congue consectetur adipiscing elitsuspendisse molestie risus. consectetur
+                    </p>
+                    <picture><source srcset="img/permonth-bg-center.webp" type="image/webp"><img class="permonth__left-bg1" src="img/permonth-bg-center.png" alt="bg"></picture>
+                    <picture><source srcset="img/permonth-bg-left.webp" type="image/webp"><img class="permonth__left-bg2" src="img/permonth-bg-left.png" alt="bg"></picture>
+                    <picture><source srcset="img/premonth-bottle-mobile.webp" type="image/webp"><img src="img/premonth-bottle-mobile.png" alt="bottle" class="permonth__left-bg2-mobile"></picture>
+                </div>
+                <div class="permonth__inner-right">
+                    <div class="timer popup__timer" dir="ltr">
+                        <p class="timer__title popup__timer-title" id="upform">
+                            <img src="img/timer.svg" alt="timer" />
+                            <span>Акция действительна:</span>
+                        </p>
+                        <div data-timer="detailed" class="timer__inner ">
+                            <div class="white">
+                                <div data-hours-dozens class="timer__item">0</div>
+                            </div>
+                            <div class="white mr7">
+                                <div data-hours-units class="timer__item">0</div>
+                            </div>
+                            <div class="dots">
+                                :
+                            </div>
+                            <div class="white ml7">
+                                <div data-minutes-dozens class="timer__item">0</div>
+                            </div>
+                            <div class="white mr7">
+                                <div data-minutes-units class="timer__item">0</div>
+                            </div>
+                            <div class="dots">
+                                :
+                            </div>
+                            <div class="white ml7">
+                                <div data-seconds-dozens class="timer__item">0</div>
+                            </div>
+                            <div class="white">
+                                <div data-seconds-units class="timer__item">0</div>
+                            </div>
+                        </div>
+                        <div class="timer__names">
+                            <p class="timer__names-name hours">часы</p>
+                            <p class="timer__names-name min">минуты</p>
+                            <p class="timer__names-name sec">секунды</p>
+                        </div>
+                    </div>
+                    <form class="popup__form permonth__form">
+                        <picture><source srcset="img/popup-rigt-img.webp" type="image/webp"><img class="permonth__form-img" src="img/popup-rigt-img.png" alt="metr"></picture>
+                        <picture><source srcset="img/form-img.webp" type="image/webp"><img class="popup__form-img permonth__mobile" src="img/form-img.png" alt="form"></picture>
+                        <h4 class="popup__form-title">
+                            Закажите <span class="popup__form-color">BodyBoom</span>
+                            прямо сейчас
+                        </h4>
+                        <div class="popup__form-price">
+                            <p class="popup__form-price--new">
+                                2290 E£
+                            </p>
+                            <p class="popup__form-price--old">
+                                4580
+                            </p>
+                        </div>
+                        <p class="popup__form-text">
+                            *Ваше имя
+                        </p>
+                        <input class="popup__form-name" type="text" placeholder="">
+                        <p class="popup__form-text">
+                            *Номер телефона
+                        </p>
+                        <input class="popup__form-phone" type="tel" placeholder="">
+                        <button class="popup__form-btn">Заказать со скидкой 50%</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a href="#" class="footer__logo">
+                    <img class="footer__logo-img" src="img/footer-logo.svg" alt="logo">
+                </a>
+                <p class="footer__inner-text">
+                    © 2022 Copyright. All rights reserved
+                </p>
+                <nav class="footer__inner-menu">
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">
+                                о продукте
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">
+                                результаты
+                            </a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">
+                                Состав
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20230527162426"></script>
+    <script src="magnific-popup/jquery.magnific-popup.js?_v=20230527162426"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230527162426"></script>
+    <script src="js/app.min.js?_v=20230527162426"></script>
+</body>
+
+</html>
